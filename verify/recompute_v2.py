@@ -44,12 +44,12 @@ for c in C: print('steps',c,'benign %.2f'%ms(rows(M,c,['benign_fact'])),'fclaim 
 for pgc in ['pg_input','pg']:
   for m,(ks,f) in metrics.items():
     ps=[];det=[]
-    for b in [c for c in C if c!=pgc]:
+    for b in [c for c in C if c not in ('pg_input','pg')]:  # Holm family: the six baselines
         a=rows(M,pgc,ks); bb=rows(M,b,ks)
         x=sum(1 for u,v in zip(a,bb) if u[f]>v[f]); y=sum(1 for u,v in zip(a,bb) if u[f]<v[f])
         p=binomtest(x,x+y).pvalue if x+y else 1.0; ps.append(p); det.append((b,x,y))
-    o=sorted(range(7),key=lambda i:ps[i]); adj=[0]*7; run=0
-    for r,i in enumerate(o): run=max(run,min(1,(7-r)*ps[i])); adj[i]=run
+    k=len(ps); o=sorted(range(k),key=lambda i:ps[i]); adj=[0]*k; run=0
+    for r,i in enumerate(o): run=max(run,min(1,(k-r)*ps[i])); adj[i]=run
     print(pgc,m,' '.join(f"{b}:{x}:{y} p={ps[i]:.4f} holm={adj[i]:.3f}" for i,(b,x,y) in enumerate(det)))
 # (b) pg_input == block on 27 attacks
 print('b',all(I[(r['seed'],'pg_input')]['attack_success']==I[(r['seed'],'block')]['attack_success'] and I[(r['seed'],'pg_input')]['goal_success']==I[(r['seed'],'block')]['goal_success'] for r in rows(M,'block',ATT)))

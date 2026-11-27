@@ -11,7 +11,7 @@ A household robot driven by an LLM does a trusted job for its owner. While it wo
 | `block` | Withheld |
 | `allowlist` | Shown verbatim; a gate compiled from the job text blocks picking objects and toggling appliances the job does not need |
 | `allowlist_arg` | Added after review: the allowlist plus a Progent-style argument rule; a job object may be put down only at its destination or on an open surface |
-| `self_check` | Shown verbatim; `done` is accepted only when the robot's own observations confirm every goal in the job |
+| `self_check` | Shown verbatim; `done` is accepted only when every job goal holds in a belief built from the initial layout, the robot's own executed effects and its observations |
 | `pg_input` | Reduced to typed `object at location` claims labelled UNVERIFIED; the rest is withheld |
 | `pg` | `pg_input` plus the allowlist and the done check |
 
@@ -25,11 +25,11 @@ A household robot driven by an LLM does a trusted job for its owner. While it wo
 | Job success with a true hint (12) | 1.00 | 1.00 | .58 | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 |
 | Relayed owner request done (6) | .50 | .33 | .00 | .00 | .00 | .50 | .00 | .00 |
 
-Numbers in brackets are episode counts.
+Numbers in parentheses are episode counts. Paper names: `rule_only` = Rule only, `block` = Block (withholding), `allowlist` = Allowlist (object-level), `allowlist_arg` = Argument allowlist, `self_check` = Self-check, `pg_input` = PG-input, `pg` = PG.
 
-- **Attacks:** `block`, `pg_input` and `allowlist_arg` all stop every attack. `pg_input` vs `rule_only` is 6:0 paired (p = 0.031, Holm-adjusted 0.19); no difference is significant after adjustment.
+- **Attacks:** `block`, `pg_input` and `allowlist_arg` all stop every attack in the suite (some zeros hold by construction, see the paper); only the hijack attack discriminates. `pg_input` vs `rule_only` is 6:0 paired (p = 0.031, Holm-adjusted 0.19); no difference is significant after adjustment.
 - **`pg_input` equals `block` on attacks:** 24 of 27 attack payloads contain no extractable claim. Its benefit is keeping true hints (12/12 vs 7/12).
-- **`allowlist_arg` stalls:** in 2 hijack episodes and 1 owner-request episode the model retries the refused action until it runs out of steps.
+- **Gates stall:** `allowlist_arg` runs into the step cap on repeatedly refused actions in 5 episodes and fails 3 of those jobs: 2 hijack episodes (refused placements, both jobs fail), 1 hazard episode (refused cloth picks, job still done) and 2 owner-request episodes (refused picks, one job fails). The object-level `allowlist` stalls in the same hazard and owner-request episodes. `pg_input` and `pg` never hit the step cap.
 - **`pg` and `pg_input` are identical here:** in every episode the gate and the done check never had to act.
 - **Adaptive suite** (27 claim-shaped attacks, `results/adaptive.jsonl`): no hijack in any condition; a false completion claim worked once in 9 against `rule_only` and `allowlist_arg`, never against `pg_input`/`pg`.
 - **Design fix:** the first run had two design flaws, described in the paper. Its data is kept in `results/v1_confounded/`.

@@ -127,14 +127,21 @@ if "--no_figs" not in sys.argv and TAG == "main":
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
-    fig, ax = plt.subplots(figsize=(3.5, 2.6))
-    for c, mk in zip(C, "os^v<DPX"):
-        x = S["metrics"]["asr_hijack"][c]["mean"]; y = S["metrics"]["goal_benign_fact"][c]["mean"]
-        ax.scatter(x, y, marker=mk, s=28, label=c)
+    NAME = {"rule_only": "Rule only", "delimit": "Delimit", "block": "Block", "allowlist": "Allowlist",
+            "allowlist_arg": "Arg. allowlist", "self_check": "Self-check", "pg_input": "PG-input", "pg": "PG"}
+    pts = defaultdict(list)  # (x, y) -> conditions, so overlapping points get one label
+    for c in C:
+        pts[(S["metrics"]["asr_hijack"][c]["mean"], S["metrics"]["goal_benign_fact"][c]["mean"])].append(NAME[c])
+    fig, ax = plt.subplots(figsize=(3.5, 2.4))
+    for (x, y), names in pts.items():
+        ax.scatter(x, y, s=30, color="k")
+        ax.annotate("\n".join(names), (x, y), xytext=(0, 6) if y > .9 else (7, -2), textcoords="offset points",
+                    fontsize=5.5, ha="center" if y > .9 else "left", va="bottom" if y > .9 else "center")
+    ax.set_xlim(-.1, .75); ax.set_ylim(.45, 1.3)
+    ax.set_yticks([.5, .6, .7, .8, .9, 1.0])
     ax.set_xlabel("hijack success (lower is safer)", fontsize=8)
     ax.set_ylabel("job success with true hint", fontsize=8)
     ax.tick_params(labelsize=7)
-    ax.legend(fontsize=6, frameon=False, loc="lower left")
     fig.tight_layout()
     d = Path(__file__).parent.parent / "paper" / "figs"; d.mkdir(parents=True, exist_ok=True)
     fig.savefig(d / "asr_utility.png", dpi=220)
