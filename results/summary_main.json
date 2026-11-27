@@ -1,5 +1,5 @@
 {
- "n_rows": 420,
+ "n_rows": 480,
  "n_episodes": 60,
  "metrics": {
   "asr_hazard": {
@@ -7,37 +7,74 @@
    "rule_only": {
     "mean": 0.1111111111111111,
     "lo": 0.0,
-    "hi": 0.3333333333333333
+    "hi": 0.3333333333333333,
+    "cp": [
+     0.002809136746599161,
+     0.48249651491733714
+    ]
    },
    "delimit": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
    },
    "block": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
    },
    "allowlist": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
+   },
+   "allowlist_arg": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
    },
    "self_check": {
     "mean": 0.1111111111111111,
     "lo": 0.0,
-    "hi": 0.3333333333333333
+    "hi": 0.3333333333333333,
+    "cp": [
+     0.002809136746599161,
+     0.48249651491733714
+    ]
    },
    "pg_input": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
    },
    "pg": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
    }
   },
   "asr_hijack": {
@@ -45,37 +82,74 @@
    "rule_only": {
     "mean": 0.5555555555555556,
     "lo": 0.2222222222222222,
-    "hi": 0.8888888888888888
+    "hi": 0.8888888888888888,
+    "cp": [
+     0.2120085067788678,
+     0.8630043377348335
+    ]
    },
    "delimit": {
     "mean": 0.4444444444444444,
     "lo": 0.1111111111111111,
-    "hi": 0.7777777777777778
+    "hi": 0.7777777777777778,
+    "cp": [
+     0.1369956622651664,
+     0.787991493221132
+    ]
    },
    "block": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
    },
    "allowlist": {
     "mean": 0.5555555555555556,
     "lo": 0.2222222222222222,
-    "hi": 0.8888888888888888
+    "hi": 0.8888888888888888,
+    "cp": [
+     0.2120085067788678,
+     0.8630043377348335
+    ]
+   },
+   "allowlist_arg": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
    },
    "self_check": {
     "mean": 0.1111111111111111,
     "lo": 0.0,
-    "hi": 0.3333333333333333
+    "hi": 0.3333333333333333,
+    "cp": [
+     0.002809136746599161,
+     0.48249651491733714
+    ]
    },
    "pg_input": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
    },
    "pg": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
    }
   },
   "asr_false_done": {
@@ -83,37 +157,74 @@
    "rule_only": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
    },
    "delimit": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
    },
    "block": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
    },
    "allowlist": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
+   },
+   "allowlist_arg": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
    },
    "self_check": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
    },
    "pg_input": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
    },
    "pg": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
    }
   },
   "asr_pooled": {
@@ -121,37 +232,74 @@
    "rule_only": {
     "mean": 0.2222222222222222,
     "lo": 0.07407407407407407,
-    "hi": 0.37037037037037035
+    "hi": 0.37037037037037035,
+    "cp": [
+     0.08621693994756668,
+     0.42258306004437884
+    ]
    },
    "delimit": {
     "mean": 0.14814814814814814,
     "lo": 0.037037037037037035,
-    "hi": 0.2962962962962963
+    "hi": 0.2962962962962963,
+    "cp": [
+     0.041887396473767324,
+     0.3373108640242445
+    ]
    },
    "block": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.12770286761543231
+    ]
    },
    "allowlist": {
     "mean": 0.18518518518518517,
-    "lo": 0.07407407407407407,
-    "hi": 0.3333333333333333
+    "lo": 0.037037037037037035,
+    "hi": 0.3333333333333333,
+    "cp": [
+     0.06300000653767673,
+     0.38082987909399446
+    ]
+   },
+   "allowlist_arg": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.12770286761543231
+    ]
    },
    "self_check": {
     "mean": 0.07407407407407407,
     "lo": 0.0,
-    "hi": 0.18518518518518517
+    "hi": 0.18518518518518517,
+    "cp": [
+     0.009100072942306248,
+     0.24289834684562722
+    ]
    },
    "pg_input": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.12770286761543231
+    ]
    },
    "pg": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.12770286761543231
+    ]
    }
   },
   "asr_hijack_ever": {
@@ -159,37 +307,74 @@
    "rule_only": {
     "mean": 0.5555555555555556,
     "lo": 0.2222222222222222,
-    "hi": 0.8888888888888888
+    "hi": 0.8888888888888888,
+    "cp": [
+     0.2120085067788678,
+     0.8630043377348335
+    ]
    },
    "delimit": {
     "mean": 0.4444444444444444,
     "lo": 0.1111111111111111,
-    "hi": 0.7777777777777778
+    "hi": 0.7777777777777778,
+    "cp": [
+     0.1369956622651664,
+     0.787991493221132
+    ]
    },
    "block": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
    },
    "allowlist": {
     "mean": 0.5555555555555556,
     "lo": 0.2222222222222222,
-    "hi": 0.8888888888888888
+    "hi": 0.8888888888888888,
+    "cp": [
+     0.2120085067788678,
+     0.8630043377348335
+    ]
+   },
+   "allowlist_arg": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
    },
    "self_check": {
     "mean": 0.5555555555555556,
     "lo": 0.2222222222222222,
-    "hi": 0.8888888888888888
+    "hi": 0.8888888888888888,
+    "cp": [
+     0.2120085067788678,
+     0.8630043377348335
+    ]
    },
    "pg_input": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
    },
    "pg": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
    }
   },
   "goal_false_claim": {
@@ -197,37 +382,74 @@
    "rule_only": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.6637328831200568,
+     1.0
+    ]
    },
    "delimit": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.6637328831200568,
+     1.0
+    ]
    },
    "block": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.6637328831200568,
+     1.0
+    ]
    },
    "allowlist": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.6637328831200568,
+     1.0
+    ]
+   },
+   "allowlist_arg": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "cp": [
+     0.6637328831200568,
+     1.0
+    ]
    },
    "self_check": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.6637328831200568,
+     1.0
+    ]
    },
    "pg_input": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.6637328831200568,
+     1.0
+    ]
    },
    "pg": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.6637328831200568,
+     1.0
+    ]
    }
   },
   "goal_benign_fact": {
@@ -235,37 +457,74 @@
    "rule_only": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.7353515306029486,
+     1.0
+    ]
    },
    "delimit": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.7353515306029486,
+     1.0
+    ]
    },
    "block": {
     "mean": 0.5833333333333334,
     "lo": 0.3333333333333333,
-    "hi": 0.8333333333333334
+    "hi": 0.8333333333333334,
+    "cp": [
+     0.2766696856821059,
+     0.8483477701915698
+    ]
    },
    "allowlist": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.7353515306029486,
+     1.0
+    ]
+   },
+   "allowlist_arg": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "cp": [
+     0.7353515306029486,
+     1.0
+    ]
    },
    "self_check": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.7353515306029486,
+     1.0
+    ]
    },
    "pg_input": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.7353515306029486,
+     1.0
+    ]
    },
    "pg": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.7353515306029486,
+     1.0
+    ]
    }
   },
   "goal_clean": {
@@ -273,37 +532,74 @@
    "rule_only": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.5407418735600993,
+     1.0
+    ]
    },
    "delimit": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.5407418735600993,
+     1.0
+    ]
    },
    "block": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.5407418735600993,
+     1.0
+    ]
    },
    "allowlist": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.5407418735600993,
+     1.0
+    ]
+   },
+   "allowlist_arg": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "cp": [
+     0.5407418735600993,
+     1.0
+    ]
    },
    "self_check": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.5407418735600993,
+     1.0
+    ]
    },
    "pg_input": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.5407418735600993,
+     1.0
+    ]
    },
    "pg": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.5407418735600993,
+     1.0
+    ]
    }
   },
   "owner_extra_done": {
@@ -311,37 +607,74 @@
    "rule_only": {
     "mean": 0.5,
     "lo": 0.16666666666666666,
-    "hi": 0.8333333333333334
+    "hi": 0.8333333333333334,
+    "cp": [
+     0.11811724875702517,
+     0.8818827512429748
+    ]
    },
    "delimit": {
     "mean": 0.3333333333333333,
     "lo": 0.0,
-    "hi": 0.6666666666666666
+    "hi": 0.6666666666666666,
+    "cp": [
+     0.0432718682927416,
+     0.7772219044964879
+    ]
    },
    "block": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.4592581264399006
+    ]
    },
    "allowlist": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.4592581264399006
+    ]
+   },
+   "allowlist_arg": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.4592581264399006
+    ]
    },
    "self_check": {
     "mean": 0.5,
     "lo": 0.16666666666666666,
-    "hi": 0.8333333333333334
+    "hi": 0.8333333333333334,
+    "cp": [
+     0.11811724875702517,
+     0.8818827512429748
+    ]
    },
    "pg_input": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.4592581264399006
+    ]
    },
    "pg": {
     "mean": 0.0,
     "lo": 0.0,
-    "hi": 0.0
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.4592581264399006
+    ]
    }
   },
   "goal_attacks": {
@@ -349,37 +682,74 @@
    "rule_only": {
     "mean": 0.8148148148148148,
     "lo": 0.6666666666666666,
-    "hi": 0.9629629629629629
+    "hi": 0.9629629629629629,
+    "cp": [
+     0.6191701209060054,
+     0.9369999934623232
+    ]
    },
    "delimit": {
     "mean": 0.8148148148148148,
     "lo": 0.6666666666666666,
-    "hi": 0.9629629629629629
+    "hi": 0.9629629629629629,
+    "cp": [
+     0.6191701209060054,
+     0.9369999934623232
+    ]
    },
    "block": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.8722971323845676,
+     1.0
+    ]
    },
    "allowlist": {
     "mean": 0.8148148148148148,
     "lo": 0.6666666666666666,
-    "hi": 0.9629629629629629
+    "hi": 0.9629629629629629,
+    "cp": [
+     0.6191701209060054,
+     0.9369999934623232
+    ]
+   },
+   "allowlist_arg": {
+    "mean": 0.9259259259259259,
+    "lo": 0.8148148148148148,
+    "hi": 1.0,
+    "cp": [
+     0.7571016531543728,
+     0.9908999270576937
+    ]
    },
    "self_check": {
     "mean": 0.9629629629629629,
     "lo": 0.8888888888888888,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.8102943825869553,
+     0.9990627429080552
+    ]
    },
    "pg_input": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.8722971323845676,
+     1.0
+    ]
    },
    "pg": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.8722971323845676,
+     1.0
+    ]
    }
   },
   "utility_pooled": {
@@ -387,37 +757,74 @@
    "rule_only": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.8722971323845676,
+     1.0
+    ]
    },
    "delimit": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.8722971323845676,
+     1.0
+    ]
    },
    "block": {
     "mean": 0.8148148148148148,
     "lo": 0.6666666666666666,
-    "hi": 0.9629629629629629
+    "hi": 0.9629629629629629,
+    "cp": [
+     0.6191701209060054,
+     0.9369999934623232
+    ]
    },
    "allowlist": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.8722971323845676,
+     1.0
+    ]
+   },
+   "allowlist_arg": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "cp": [
+     0.8722971323845676,
+     1.0
+    ]
    },
    "self_check": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.8722971323845676,
+     1.0
+    ]
    },
    "pg_input": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.8722971323845676,
+     1.0
+    ]
    },
    "pg": {
     "mean": 1.0,
     "lo": 1.0,
-    "hi": 1.0
+    "hi": 1.0,
+    "cp": [
+     0.8722971323845676,
+     1.0
+    ]
    }
   },
   "steps_false_claim": {
@@ -438,6 +845,11 @@
     "hi": 13.0
    },
    "allowlist": {
+    "mean": 12.555555555555555,
+    "lo": 11.555555555555555,
+    "hi": 13.777777777777779
+   },
+   "allowlist_arg": {
     "mean": 12.555555555555555,
     "lo": 11.555555555555555,
     "hi": 13.777777777777779
@@ -463,7 +875,7 @@
    "rule_only": {
     "mean": 13.333333333333334,
     "lo": 12.083333333333334,
-    "hi": 14.583333333333334
+    "hi": 14.666666666666666
    },
    "delimit": {
     "mean": 13.75,
@@ -472,27 +884,32 @@
    },
    "block": {
     "mean": 20.333333333333332,
-    "lo": 15.583333333333334,
+    "lo": 15.833333333333334,
     "hi": 25.083333333333332
    },
    "allowlist": {
     "mean": 13.333333333333334,
     "lo": 12.083333333333334,
-    "hi": 14.666666666666666
+    "hi": 14.583333333333334
    },
-   "self_check": {
+   "allowlist_arg": {
     "mean": 13.333333333333334,
     "lo": 12.083333333333334,
     "hi": 14.583333333333334
    },
+   "self_check": {
+    "mean": 13.333333333333334,
+    "lo": 12.083333333333334,
+    "hi": 14.666666666666666
+   },
    "pg_input": {
     "mean": 12.75,
-    "lo": 11.833333333333334,
+    "lo": 11.75,
     "hi": 13.666666666666666
    },
    "pg": {
     "mean": 12.75,
-    "lo": 11.833333333333334,
+    "lo": 11.75,
     "hi": 13.583333333333334
    }
   },
@@ -518,6 +935,11 @@
     "lo": 12.0,
     "hi": 13.5
    },
+   "allowlist_arg": {
+    "mean": 12.5,
+    "lo": 12.0,
+    "hi": 13.5
+   },
    "self_check": {
     "mean": 12.5,
     "lo": 12.0,
@@ -539,332 +961,398 @@
   "pg_vs_rule_only:asr_hazard": {
    "pg_higher": 0,
    "base_higher": 1,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_delimit:asr_hazard": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_block:asr_hazard": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_allowlist:asr_hazard": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  "pg_vs_allowlist_arg:asr_hazard": {
+   "pg_higher": 0,
+   "base_higher": 0,
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_self_check:asr_hazard": {
    "pg_higher": 0,
    "base_higher": 1,
-   "p": 1.0
-  },
-  "pg_vs_pg_input:asr_hazard": {
-   "pg_higher": 0,
-   "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_rule_only:asr_hijack": {
    "pg_higher": 0,
    "base_higher": 5,
-   "p": 0.0625
+   "p": 0.0625,
+   "p_holm": 0.375
   },
   "pg_vs_delimit:asr_hijack": {
    "pg_higher": 0,
    "base_higher": 4,
-   "p": 0.125
+   "p": 0.125,
+   "p_holm": 0.5
   },
   "pg_vs_block:asr_hijack": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_allowlist:asr_hijack": {
    "pg_higher": 0,
    "base_higher": 5,
-   "p": 0.0625
+   "p": 0.0625,
+   "p_holm": 0.375
+  },
+  "pg_vs_allowlist_arg:asr_hijack": {
+   "pg_higher": 0,
+   "base_higher": 0,
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_self_check:asr_hijack": {
    "pg_higher": 0,
    "base_higher": 1,
-   "p": 1.0
-  },
-  "pg_vs_pg_input:asr_hijack": {
-   "pg_higher": 0,
-   "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_rule_only:asr_false_done": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_delimit:asr_false_done": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_block:asr_false_done": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_allowlist:asr_false_done": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  "pg_vs_allowlist_arg:asr_false_done": {
+   "pg_higher": 0,
+   "base_higher": 0,
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_self_check:asr_false_done": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
-  },
-  "pg_vs_pg_input:asr_false_done": {
-   "pg_higher": 0,
-   "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_rule_only:asr_pooled": {
    "pg_higher": 0,
    "base_higher": 6,
-   "p": 0.03125
+   "p": 0.03125,
+   "p_holm": 0.1875
   },
   "pg_vs_delimit:asr_pooled": {
    "pg_higher": 0,
    "base_higher": 4,
-   "p": 0.125
+   "p": 0.125,
+   "p_holm": 0.5
   },
   "pg_vs_block:asr_pooled": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_allowlist:asr_pooled": {
    "pg_higher": 0,
    "base_higher": 5,
-   "p": 0.0625
+   "p": 0.0625,
+   "p_holm": 0.3125
+  },
+  "pg_vs_allowlist_arg:asr_pooled": {
+   "pg_higher": 0,
+   "base_higher": 0,
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_self_check:asr_pooled": {
    "pg_higher": 0,
    "base_higher": 2,
-   "p": 0.5
-  },
-  "pg_vs_pg_input:asr_pooled": {
-   "pg_higher": 0,
-   "base_higher": 0,
-   "p": 1.0
+   "p": 0.5,
+   "p_holm": 1.0
   },
   "pg_vs_rule_only:asr_hijack_ever": {
    "pg_higher": 0,
    "base_higher": 5,
-   "p": 0.0625
+   "p": 0.0625,
+   "p_holm": 0.375
   },
   "pg_vs_delimit:asr_hijack_ever": {
    "pg_higher": 0,
    "base_higher": 4,
-   "p": 0.125
+   "p": 0.125,
+   "p_holm": 0.375
   },
   "pg_vs_block:asr_hijack_ever": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_allowlist:asr_hijack_ever": {
    "pg_higher": 0,
    "base_higher": 5,
-   "p": 0.0625
+   "p": 0.0625,
+   "p_holm": 0.375
+  },
+  "pg_vs_allowlist_arg:asr_hijack_ever": {
+   "pg_higher": 0,
+   "base_higher": 0,
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_self_check:asr_hijack_ever": {
    "pg_higher": 0,
    "base_higher": 5,
-   "p": 0.0625
-  },
-  "pg_vs_pg_input:asr_hijack_ever": {
-   "pg_higher": 0,
-   "base_higher": 0,
-   "p": 1.0
+   "p": 0.0625,
+   "p_holm": 0.375
   },
   "pg_vs_rule_only:goal_false_claim": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_delimit:goal_false_claim": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_block:goal_false_claim": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_allowlist:goal_false_claim": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  "pg_vs_allowlist_arg:goal_false_claim": {
+   "pg_higher": 0,
+   "base_higher": 0,
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_self_check:goal_false_claim": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
-  },
-  "pg_vs_pg_input:goal_false_claim": {
-   "pg_higher": 0,
-   "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_rule_only:goal_benign_fact": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_delimit:goal_benign_fact": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_block:goal_benign_fact": {
    "pg_higher": 5,
    "base_higher": 0,
-   "p": 0.0625
+   "p": 0.0625,
+   "p_holm": 0.375
   },
   "pg_vs_allowlist:goal_benign_fact": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  "pg_vs_allowlist_arg:goal_benign_fact": {
+   "pg_higher": 0,
+   "base_higher": 0,
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_self_check:goal_benign_fact": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
-  },
-  "pg_vs_pg_input:goal_benign_fact": {
-   "pg_higher": 0,
-   "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_rule_only:goal_clean": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_delimit:goal_clean": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_block:goal_clean": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_allowlist:goal_clean": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  "pg_vs_allowlist_arg:goal_clean": {
+   "pg_higher": 0,
+   "base_higher": 0,
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_self_check:goal_clean": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
-  },
-  "pg_vs_pg_input:goal_clean": {
-   "pg_higher": 0,
-   "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_rule_only:owner_extra_done": {
    "pg_higher": 0,
    "base_higher": 3,
-   "p": 0.25
+   "p": 0.25,
+   "p_holm": 1.0
   },
   "pg_vs_delimit:owner_extra_done": {
    "pg_higher": 0,
    "base_higher": 2,
-   "p": 0.5
+   "p": 0.5,
+   "p_holm": 1.0
   },
   "pg_vs_block:owner_extra_done": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_allowlist:owner_extra_done": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  "pg_vs_allowlist_arg:owner_extra_done": {
+   "pg_higher": 0,
+   "base_higher": 0,
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_self_check:owner_extra_done": {
    "pg_higher": 0,
    "base_higher": 3,
-   "p": 0.25
-  },
-  "pg_vs_pg_input:owner_extra_done": {
-   "pg_higher": 0,
-   "base_higher": 0,
-   "p": 1.0
+   "p": 0.25,
+   "p_holm": 1.0
   },
   "pg_vs_rule_only:goal_attacks": {
    "pg_higher": 5,
    "base_higher": 0,
-   "p": 0.0625
+   "p": 0.0625,
+   "p_holm": 0.375
   },
   "pg_vs_delimit:goal_attacks": {
    "pg_higher": 5,
    "base_higher": 0,
-   "p": 0.0625
+   "p": 0.0625,
+   "p_holm": 0.375
   },
   "pg_vs_block:goal_attacks": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_allowlist:goal_attacks": {
    "pg_higher": 5,
    "base_higher": 0,
-   "p": 0.0625
+   "p": 0.0625,
+   "p_holm": 0.375
+  },
+  "pg_vs_allowlist_arg:goal_attacks": {
+   "pg_higher": 2,
+   "base_higher": 0,
+   "p": 0.5,
+   "p_holm": 1.0
   },
   "pg_vs_self_check:goal_attacks": {
    "pg_higher": 1,
    "base_higher": 0,
-   "p": 1.0
-  },
-  "pg_vs_pg_input:goal_attacks": {
-   "pg_higher": 0,
-   "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_rule_only:utility_pooled": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_delimit:utility_pooled": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_block:utility_pooled": {
    "pg_higher": 5,
    "base_higher": 0,
-   "p": 0.0625
+   "p": 0.0625,
+   "p_holm": 0.375
   },
   "pg_vs_allowlist:utility_pooled": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  "pg_vs_allowlist_arg:utility_pooled": {
+   "pg_higher": 0,
+   "base_higher": 0,
+   "p": 1.0,
+   "p_holm": 1.0
   },
   "pg_vs_self_check:utility_pooled": {
    "pg_higher": 0,
    "base_higher": 0,
-   "p": 1.0
-  },
-  "pg_vs_pg_input:utility_pooled": {
-   "pg_higher": 0,
-   "base_higher": 0,
-   "p": 1.0
+   "p": 1.0,
+   "p_holm": 1.0
   }
  },
  "asr_given_saw": {
@@ -882,6 +1370,10 @@
     "n": 9
    },
    "allowlist": {
+    "mean": 0.0,
+    "n": 9
+   },
+   "allowlist_arg": {
     "mean": 0.0,
     "n": 9
    },
@@ -915,6 +1407,10 @@
     "mean": 0.5555555555555556,
     "n": 9
    },
+   "allowlist_arg": {
+    "mean": 0.0,
+    "n": 9
+   },
    "self_check": {
     "mean": 0.1111111111111111,
     "n": 9
@@ -942,6 +1438,10 @@
     "n": 9
    },
    "allowlist": {
+    "mean": 0.0,
+    "n": 9
+   },
+   "allowlist_arg": {
     "mean": 0.0,
     "n": 9
    },

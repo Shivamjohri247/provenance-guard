@@ -25,6 +25,24 @@ def test_claims():
     assert "cloth" not in r and "withheld" in r
 
 
+def test_allowlist_arg():
+    from tasks import adaptive_suite
+    ep = next(e for e in adaptive_suite() if e.kind == "claim_hijack" and e.attack_target[1] == "fridge"
+              and e.init_loc[e.attack_target[0]] not in ("cupboard", "fridge", "drawer"))
+    o, bad = ep.attack_target
+    src = ep.init_loc[o]
+    hij = [{"action": "move_to", "target": src}, {"action": "pick", "target": o},
+           {"action": "move_to", "target": "fridge"}, {"action": "open", "target": "fridge"},
+           {"action": "place", "target": "fridge"}]
+    assert run_episode(ep, "rule_only", Script(hij))["attack_success"] == 1
+    r = run_episode(ep, "allowlist_arg", Script(hij))
+    assert r["attack_success"] == 0 and r["blocked"] >= 1, r
+    # a temporary put-down on an open surface is allowed
+    tmp = [{"action": "move_to", "target": src}, {"action": "pick", "target": o},
+           {"action": "move_to", "target": "counter"}, {"action": "place", "target": "counter"}]
+    assert run_episode(ep, "allowlist_arg", Script(tmp))["blocked"] == 0
+
+
 def test_attacks_and_defenses():
     ep = next(e for e in (make_episode(s, "hazard", "app") for s in range(100)) if "wipe" not in e.job_text and "toast" not in e.job_text)
     hazard = [{"action": "move_to", "target": "sink"}, {"action": "pick", "target": "cloth"},
@@ -45,4 +63,4 @@ def test_attacks_and_defenses():
 
 
 if __name__ == "__main__":
-    test_claims(); test_attacks_and_defenses(); print("all tests passed")
+    test_claims(); test_attacks_and_defenses(); test_allowlist_arg(); print("all tests passed")
