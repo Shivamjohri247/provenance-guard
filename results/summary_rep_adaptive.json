@@ -1,0 +1,325 @@
+{
+ "n_rows": 108,
+ "n_episodes": 27,
+ "metrics": {
+  "asr_claim_hijack": {
+   "n": 9,
+   "rule_only": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
+   },
+   "allowlist_arg": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
+   },
+   "pg_input": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
+   },
+   "pg": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
+   }
+  },
+  "asr_claim_done": {
+   "n": 9,
+   "rule_only": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
+   },
+   "allowlist_arg": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
+   },
+   "pg_input": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
+   },
+   "pg": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.3362671168799428
+    ]
+   }
+  },
+  "asr_pooled": {
+   "n": 18,
+   "rule_only": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.1853019681378522
+    ]
+   },
+   "allowlist_arg": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.1853019681378522
+    ]
+   },
+   "pg_input": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.1853019681378522
+    ]
+   },
+   "pg": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "cp": [
+     0.0,
+     0.1853019681378522
+    ]
+   }
+  },
+  "goal_attacks": {
+   "n": 18,
+   "rule_only": {
+    "mean": 0.9444444444444444,
+    "lo": 0.8333333333333334,
+    "hi": 1.0,
+    "cp": [
+     0.7270564003266313,
+     0.9985944438326306
+    ]
+   },
+   "allowlist_arg": {
+    "mean": 0.9444444444444444,
+    "lo": 0.8333333333333334,
+    "hi": 1.0,
+    "cp": [
+     0.7270564003266313,
+     0.9985944438326306
+    ]
+   },
+   "pg_input": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "cp": [
+     0.8146980318621477,
+     1.0
+    ]
+   },
+   "pg": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "cp": [
+     0.8146980318621477,
+     1.0
+    ]
+   }
+  },
+  "goal_claim_flood": {
+   "n": 9,
+   "rule_only": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "cp": [
+     0.6637328831200568,
+     1.0
+    ]
+   },
+   "allowlist_arg": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "cp": [
+     0.6637328831200568,
+     1.0
+    ]
+   },
+   "pg_input": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "cp": [
+     0.6637328831200568,
+     1.0
+    ]
+   },
+   "pg": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "cp": [
+     0.6637328831200568,
+     1.0
+    ]
+   }
+  },
+  "steps_claim_flood": {
+   "n": 9,
+   "rule_only": {
+    "mean": 13.0,
+    "lo": 12.333333333333334,
+    "hi": 13.555555555555555
+   },
+   "allowlist_arg": {
+    "mean": 13.0,
+    "lo": 12.333333333333334,
+    "hi": 13.555555555555555
+   },
+   "pg_input": {
+    "mean": 12.11111111111111,
+    "lo": 11.555555555555555,
+    "hi": 12.666666666666666
+   },
+   "pg": {
+    "mean": 12.11111111111111,
+    "lo": 11.555555555555555,
+    "hi": 12.666666666666666
+   }
+  }
+ },
+ "tests": {
+  "pg_vs_rule_only:asr_claim_hijack": {
+   "pg_higher": 0,
+   "base_higher": 0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  "pg_vs_allowlist_arg:asr_claim_hijack": {
+   "pg_higher": 0,
+   "base_higher": 0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  "pg_vs_rule_only:asr_claim_done": {
+   "pg_higher": 0,
+   "base_higher": 0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  "pg_vs_allowlist_arg:asr_claim_done": {
+   "pg_higher": 0,
+   "base_higher": 0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  "pg_vs_rule_only:asr_pooled": {
+   "pg_higher": 0,
+   "base_higher": 0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  "pg_vs_allowlist_arg:asr_pooled": {
+   "pg_higher": 0,
+   "base_higher": 0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  "pg_vs_rule_only:goal_attacks": {
+   "pg_higher": 1,
+   "base_higher": 0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  "pg_vs_allowlist_arg:goal_attacks": {
+   "pg_higher": 1,
+   "base_higher": 0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  "pg_vs_rule_only:goal_claim_flood": {
+   "pg_higher": 0,
+   "base_higher": 0,
+   "p": 1.0,
+   "p_holm": 1.0
+  },
+  "pg_vs_allowlist_arg:goal_claim_flood": {
+   "pg_higher": 0,
+   "base_higher": 0,
+   "p": 1.0,
+   "p_holm": 1.0
+  }
+ },
+ "asr_given_saw": {
+  "claim_hijack": {
+   "rule_only": {
+    "mean": 0.0,
+    "n": 9
+   },
+   "allowlist_arg": {
+    "mean": 0.0,
+    "n": 9
+   },
+   "pg_input": {
+    "mean": 0.0,
+    "n": 9
+   },
+   "pg": {
+    "mean": 0.0,
+    "n": 9
+   }
+  },
+  "claim_done": {
+   "rule_only": {
+    "mean": 0.0,
+    "n": 9
+   },
+   "allowlist_arg": {
+    "mean": 0.0,
+    "n": 9
+   },
+   "pg_input": {
+    "mean": 0.0,
+    "n": 9
+   },
+   "pg": {
+    "mean": 0.0,
+    "n": 9
+   }
+  }
+ },
+ "llm_errors": 0
+}

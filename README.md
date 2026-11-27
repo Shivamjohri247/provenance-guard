@@ -34,6 +34,22 @@ Numbers in parentheses are episode counts. Paper names: `rule_only` = Rule only,
 - **Adaptive suite** (27 claim-shaped attacks, `results/adaptive.jsonl`): no hijack in any condition; a false completion claim worked once in 9 against `rule_only` and `allowlist_arg`, never against `pg_input`/`pg`.
 - **Design fix:** the first run had two design flaws, described in the paper. Its data is kept in `results/v1_confounded/`.
 
+## Pre-registered replication
+
+`replication/PREREG.md` was committed before the run. The replication used fresh seeds 9000–9059 (main, all 8 conditions) and 9500–9526 (adaptive) with an empty response cache: 588 runs, no errors, none excluded. Data is in `results/rep_main.jsonl` and `results/rep_adaptive.jsonl`, and the analysis in `verify/replication.py`.
+
+| Primary endpoint (Holm over 3) | Result | Paired | Holm p | Same direction |
+|---|---|---|---|---|
+| Pooled attack success, `pg_input` < `rule_only` | 0/27 vs 5/27 | 5:0 | 0.13 | yes |
+| Benign-fact steps, `pg_input` < `block` | 12.8 vs 20.1 | 8:0 | **0.023** | yes |
+| Benign-fact job success, `pg_input` > `block` | 12/12 vs 7/12 | 5:0 | 0.13 | yes |
+
+- **Hijacks:** `rule_only`, `allowlist` and `self_check` were hijacked 4 times out of 9, and `delimit` once. `block`, `allowlist_arg`, `pg_input` and `pg` were never hijacked.
+- **Self-check:** the self-check effect did not replicate. It was hijacked in exactly the same episodes as `rule_only`.
+- **Argument-allowlist stalls:** `allowlist_arg` stalled more often. It failed 4 of 9 hijack jobs after 10–25 refused placements, Its job success under attack was 21/27, against 22/27 for `rule_only` and 27/27 for `pg_input`. Two of its six failures were not hijack stalls.
+- **Owner requests:** `rule_only` and `self_check` completed 4 of 6, `delimit` 2 of 6, and every other condition 1 of 6. That one episode (seed 9052) is a side effect: the robot's wipe step sweeps the requested object to its destination, so it counts for `block` too. This generator flaw does not occur in the reported run.
+- **Adaptive suite:** no hijack and no premature done.
+
 ## Layout
 
 - `pg/tasks.py`: episode generator, covering attacks (hazard, hijack, false_done, false_claim) and controls (benign_fact, owner_extra, clean).
@@ -44,6 +60,7 @@ Numbers in parentheses are episode counts. Paper names: `rule_only` = Rule only,
 - `pg/analyze.py`: aggregation, Clopper-Pearson intervals, Holm-adjusted sign tests, and the figure.
 - `pg/test_pg.py`: tests.
 - `results/main.jsonl`, `results/ext_main.jsonl` (allowlist_arg), `results/adaptive.jsonl`: one row per run, including the full trace.
+- `results/rep_*.jsonl`, `replication/PREREG.md`, `run_rep.sh`, `verify/replication.py`: the pre-registered replication.
 - `verify/recompute_v2.py`: independent recomputation of every number in the revised paper (all runs); `verify/recompute.py`: the same for the original seven-condition run; `verify/stats_exact.py`: exact intervals, sign test, Holm.
 
 ## Reproduce
@@ -61,6 +78,7 @@ SEL_BACKEND=ollama OLLAMA_MODEL=qwen3:14b ../.venv/bin/python run.py --suite ada
 ../.venv/bin/python analyze.py ../results/main.jsonl ../results/ext_main.jsonl
 ../.venv/bin/python analyze.py ../results/adaptive.jsonl --tag adaptive --no_figs
 python3 ../verify/recompute_v2.py   # independent recomputation of every reported number
+cd .. && ./run_rep.sh && python3 verify/replication.py   # pre-registered replication (~6.5 h)
 ```
 
 ## License
